@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<huntevents>
+    <event name="Broken Lanterns" number="1">
+        <text>The survivors hear the crunching of glass beneath their feet. The event revealer may choose to investigate or continue their journey. If they choose to investigate, the event revealer rolls on the table. Otherwise roll again on the hunt event table before moving on the hunt event board.</text>
+        <rolltable>
+            <roll min="1" max="3">The event revealer fumbles and cuts their foot on a jagged shard. Taking 1 event damage to~their legs</roll>
+            <roll min="4" max="8">The event revealer finds a broken lantern basic resource.</roll>
+            <roll min="9" max="10">The survivors uncover a long-abandoned lantern hoard. The forlorn sight fills them with dread and each survivor suffers 1 brain event damage. After composing themselves. Each survivor scavenges 1 broken lantern basic resource from the remains.</roll>
+        </rolltable>
+    </event>
+    <event name="Corpse" number="2">
+        <text>The survivors are overcome by a sudden chill, their breath seizing in their lungs. The survivors freeze, each losing 1 survival. At the center of the sudden frost is a perfectly preserved corpse. If your settlement chose the Cannibalize death principle, the event revealer gains 1 random basic resource. If you chose the Graves death principle, the event revealer gains +1 courage and +1 understanding</text>
+        <rolltable>
+            <roll min="6" max="10">on a 6+ the event revealer suffers 1 brain event damage.</roll>
+        </rolltable>
+    </event>
+</huntevents>

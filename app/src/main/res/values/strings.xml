@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KDM Companion</string>
+    <string-array name="menu_items">
+        <item>Settlement</item>
+        <item>Hunt Events</item>
+        <item>Story Events</item>
+        <item>Survivors</item>
+        <item>Armor Sets</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="hunt_events">Hunt Events</string>
+    <string name="random_event_button_text">Random Event</string>
+</resources>
