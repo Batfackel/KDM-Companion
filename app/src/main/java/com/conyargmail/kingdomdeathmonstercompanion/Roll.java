@@ -5,34 +5,43 @@ package com.conyargmail.kingdomdeathmonstercompanion;
  */
 
 public class Roll {
-    private int minimumValue;
-    private int maximumValue;
+    private String minimumValue;
+    private String maximumValue;
     private String text;
 
-    public Roll(int minimumValue, int maximumValue, String text) {
+    public Roll(String minimumValue, String maximumValue, String text) {
         setMinimumValue(minimumValue);
         setMaximumValue(maximumValue);
         setText(text);
     }
 
-    public int getMinimumValue() {
+    public Roll(String minimumValue, String maximumValue) {
+        setMinimumValue(minimumValue);
+        setMaximumValue(maximumValue);
+    }
+
+    public String getMinimumValue() {
         return minimumValue;
     }
 
-    public void setMinimumValue(int minimumValue) {
+    public void setMinimumValue(String minimumValue) {
         this.minimumValue = minimumValue;
     }
 
-    public int getMaximumValue() {
+    public String getMaximumValue() {
         return maximumValue;
     }
 
-    public void setMaximumValue(int maximumValue) {
+    public void setMaximumValue(String maximumValue) {
         this.maximumValue = maximumValue;
     }
 
     public String getText() {
         return text;
+    }
+    public String getRollFormatted() {
+        String data = String.format("%s - %s : %s \n\n", minimumValue, maximumValue, text);
+        return data;
     }
 
     public void setText(String text) {

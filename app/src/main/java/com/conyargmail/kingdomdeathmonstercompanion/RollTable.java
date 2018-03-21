@@ -24,4 +24,11 @@ public class RollTable {
     public Roll getSpecificRoll(int index) {
         return table.get(index);
     }
+    public String getFormattedTable() {
+        String formatted = new String();
+        for(int i=0; i < table.size(); i++) {
+            formatted += table.get(i).getRollFormatted();
+        }
+        return formatted;
+    }
 }

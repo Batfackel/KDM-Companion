@@ -1,17 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
 <huntevents>
     <event name="Broken Lanterns" number="1">
-        <text>The survivors hear the crunching of glass beneath their feet. The event revealer may choose to investigate or continue their journey. If they choose to investigate, the event revealer rolls on the table. Otherwise roll again on the hunt event table before moving on the hunt event board.</text>
+        <text>The survivors feel something crunching beneath their feet. The event revealer may choose to lower their lantern and investigate or ignore the sensation and continue their journey. If they choose to investigate, the event revealer gains +1 courage and rolls 1d10. Otherwise, roll again on the hunt event table before moving on the hunt event board.</text>
+        <investigae>true</investigae>
         <rolltable>
-            <roll min="1" max="3">The event revealer fumbles and cuts their foot on a jagged shard. Taking 1 event damage to~their legs</roll>
-            <roll min="4" max="8">The event revealer finds a broken lantern basic resource.</roll>
-            <roll min="9" max="10">The survivors uncover a long-abandoned lantern hoard. The forlorn sight fills them with dread and each survivor suffers 1 brain event damage. After composing themselves. Each survivor scavenges 1 broken lantern basic resource from the remains.</roll>
+            <roll min="1" max="5">You fumble and cut your foot on a jagged shard. Suffer monster level event damage to your legs.</roll>
+            <roll min="6" max="8">You salvage something usefu. Gain 1 broken lantern basic resource.</roll>
+            <roll min="9" max="+">The survivors uncover a long-abandoned lantern hoard. The forlorn sight fills them with drea, each survivor sets their insanity to 0. After composing themselves, each survivor scavenges 1 broken lantern basic resource; add them to the settlement storage.</roll>
         </rolltable>
     </event>
     <event name="Corpse" number="2">
-        <text>The survivors are overcome by a sudden chill, their breath seizing in their lungs. The survivors freeze, each losing 1 survival. At the center of the sudden frost is a perfectly preserved corpse. If your settlement chose the Cannibalize death principle, the event revealer gains 1 random basic resource. If you chose the Graves death principle, the event revealer gains +1 courage and +1 understanding</text>
+        <text>The survivors are overcome by a sudden chill, their breath seizing in their lungs. The survivors' teeth chatter mercilessly. All survivors lose monster level survival. At the center of the sudden frost is a perfectly preserved corpse.\nIf the settlement has Cannibalize, the event revealer gains 1 random basic resource.\nIf the settlement has Graves, the event revealer examines the corpse and gains +1 courage and +1 understanding.\nIf the settlement has Momento Mori, the event revealer understands a little about what happened to the corpse. They gain 1 random fighting art.</text>
+    </event>
+    <event name="Cance Pigeons" number="3">
+        <text>The survivors are surrounded by the echoing coo of infant babble. Strange bab-faced birds circle overhead. Gripped with instinctual horror, the survivors break into a run! Each survivor rolls 1d10. The lowest scoring survivor (or survivors, in case of ties) becomes a straggler. If any survivor has noisy gear, -2 to their roll. Each straggler rolls 1d10. If any survivor has a whip, they crack it, scattering many of the birds. Each straggler adds +4 to their roll.</text>
+        <stragglere>true</stragglere>
         <rolltable>
-            <roll min="6" max="10">on a 6+ the event revealer suffers 1 brain event damage.</roll>
+            <roll min="1" max="3">Running and flailing wildly, you suddenly find yourself panicked and alone. The waiting cancer pigeons descend and mercilessly peck your back, their happy cooing filling your head with horror. An hour later, the other survivors find you balled up and weeping on the ground. You are Dead Inside: you cannot gain survival. Record this impairment.</roll>
+            <roll min="4" max="6">A cancer pigeon latches onto your back! Shake it free by spending 1 survival. Otherwise, you are Dead Inside: you cannot gain survival. Record this impariment.</roll>
+            <roll min="7" max="8">You escape the terrible creatures.</roll>
+            <roll min="9" max="+">You manage to strike one of the foul creatures down. Gain 1 random basic resource.</roll>
+        </rolltable>
+    </event>
+    <event name="Famine" number="4">
+        <text>The path ahead is arid and dead. You may have survivors gain +1 courage and press on. Otherwise, roll again on the hunt event table before moving on the hunt board. If you press on, your stomachs grumble in the dark as you stumble forward. The survivors pool their supplies. The event reavealer rolls 1d10 and adds +2 to their roll for each consumable gear or resource the group has.</text>
+        <rolltable>
+            <roll min="1" max="8">The hunt takes its toll. Powerful hunger pangs set in. All survivors gain -1 speed token.</roll>
+            <roll min="9" max="14">You manage to stave off the terrible hunger.</roll>
+            <roll min="15" max="+">Everyone is invigorate by their snack. Each suvivor gains +1 survival.</roll>
+        </rolltable>
+    </event>
+    <event name="Flesh Fields" number="5">
+        <text>Ahead, the stone faces on the ground give way to a field of man-sized, fleshy boils sprouting thick black hair. The sinuous terrain radiates moist heat. As they travel, every survivor suffers heat exhaustion, losing 1 survival. The event revealer rolls 1d10. If any survivor has a sickle, they help clear a path by cutting back the thick, black hair. Add +4 to your roll.</text>
+        <rolltable>
+            <roll min="1" max="1">The event revealer contracts a flesh-eating disease brushing past the giant boils! A random limb is affected and must be amputated immediately! Roll 1d10, 1-5: arms, 6-10: legs. Suffer the dismembered severe injury at this location.</roll>
+            <roll min="2" max="3">If any survivor is insane, they imagine the flesh fields are attacking! They become hysterical, flailing and tangling themselves in the thick hair. Each insane survivor suffers monster level event damage to a random location.</roll>
+            <roll min="4" max="7">It's hot and gross, but the survivors pass through the flesh fields with no complications.</roll>
+            <roll min="8" max="9">The event revealer makes the best of a bad situation and cuts a portion of the flesh free. GAin 1 hide basic resource.</roll>
+            <roll min="10" max="+">Each survivor harvest 1 hide basic resource from the flesh fields.</roll>
+        </rolltable>
+    </event>
+    <event name="Faceless Statue" number="6">
+        <text>The survivors come upon a faceless statue holding a shining lanter. Basking in the warm light, the survivors are renewed. Each survivors gains 1 survival.\nIf the settlement has Sculpture, the survivors deeply appreciate the artist's suble craftsmanship. Each survivor rolls 1d10. Gain that many survival and +1 understanding.\nThe survivors may rest here longer. If they do, each survivor heals all injurl levels and lost armor points on 1 hit location. However, they lose track of their quarry. Move it 1 space away from the survivors on the hunt board. If a survivor heals more than 5 lost armor points this way, they stare into the shining light for too long and gain 1 random disorder,\n If all survivors are insane, they cannot rest longer.</text>
+    </event>
+    <event name="Hungry Ground" number="7">
+        <text>The ground suddenly splits and a gaping stone mouth attempts to devour the event revealer whole! The event revealer rolls 1d10.\nIf another survivor has a whip, they throw a line to the event revealer. Add +4 to your roll.</text>
+        <rolltable>
+            <roll min="1" max="1">With a muffled scream, you disappear into the ground. You manage to grab hold of a precarious ledge above the gaping maw. Lose all survival as you desperately climb up to safety. If you had none, you fall. Bones crunch between stone teeth. You are devoured whole. Dead.</roll>
+            <roll min="2" max="5">You scramble, but your leg is caught in the terrible maw. Suffer 2 event damage to the legs.</roll>
+            <roll min="6" max="9">You manage to leap away in time!</roll>
+            <roll min="10" max="+">Burp! Gurgle! The floor vomits a shiny pieve of scrap. Gain 1 broken lantern basic resource.</roll>
+        </rolltable>
+    </event>
+    <event name="Wailing Smoke" number="8">
+        <text>A constant moan follows the survivors. Eventually, they enter a area shrouded in thick fog and the wailing reaches a fevered pitch.\nEvery non-deaf survivor rolls 1d1-. If all survivors are deaf, they continue alon, heedless to the cacophony: end this event. The lowest scoring survivor (or survivors, in case of ties) becomes a straggler. EachStraggler rolls 1d10. If any survivor has noisy gear, the straggler adds +2 to their roll.\nIf any survivor has noisy gear and the settlement has Drums, they counter the wails with a tune from home. Do not roll on the table and each survivor gains +2 insanity and +2 survival.</text>
+        <rolltable>
+            <roll min="1" max="3">The fod around you turns black and fills with shapes of tormented faces. You are driven to madness. Gain 1 random disorder.</roll>
+            <roll min="4" max="6">The fog grows soupy and begins to wail. You plug your ears with your fingers, but it's hopeless. Suffer monster level brain event damage.</roll>
+            <roll min="7" max="9">You stick your thumbs into your ear and break into a run, leaving the wailing smoke.</roll>
+            <roll min="10" max="+">Mimicking the disturbing smoke, you calmly start to wail with it. Gain +2 insanity.</roll>
+        </rolltable>
+    </event>
+    <event name="Golden Light" number="9">
+        <text>A golden light blinds the survivors, stopping them in their tracks. The light shines from a single source. The event revealer is compelled to investigate. They gain +1 courage and roll 1d10.\nIf the event revealer is blind, they walk in the wrong direction and gain +3 insanity. Roll again on the hunt event table and do not investigate the light.</text>
+        <rolltable>
+            <roll min="1" max="3">The light is overpowering. Your fragile mind cannot understand its soundless words. GAin 1 random disorder.</roll>
+            <roll min="4" max="8">You wander through the light, bathed in a warm, awful feeling. You don't find anything other than exposure. Suffer monster level event damage to a random hit location.</roll>
+            <roll min="9" max="+">Something about the light stirs you, and your resolve intensifies. Gain +1 survival.</roll>
+        </rolltable>
+    </event>
+    <event name="Harvester" number="10">
+        <text>This event cannot be rerolled or avoided in any way. The ground quakes and cracks beneath the survivors. A colossal worm bursts from below, its skin a mosaic of screaming faces. The mere sight of it is maddening.\nAll survivors gain 1 random disorder and must spend 1 survival or be devoured whole. If any survivor has noisy gear, the Harvester is drawn to the sound and they are instantly devoured. Nothing can save them.\nThe creature is so horrifying that the survivors' brains erase the experience from their memories. Do not gain the benefits of your death principle.</text>
+    </event>
+    <event name="Monster Droppings" number="11">
+        <text>The survivors find some monster droppings, like those of their quarry. The event revealer chooses to either investigate or consume the droppings (choose only one).\nIf the event revealer investigates, gain +1 understanding and roll 1d10.\nIf the event revealer consumes, gain +1 courage and roll 1d10.</text>
+        <rolltable type="Investigate" person="Event Revealer">
+            <roll min="1" max="3">You discover just how sickening playing with feces is. Lose 1 survival and roll again on the hunt event table before moving on the hunt board.</roll>
+            <roll min="4" max="6">The droppings tell a story. You are on the right track. Gain +1 survival.</roll>
+            <roll min="7" max="+">You know these droppings well. You may skip the next hunt space. If this move begins the showdown, the survivors ambush their quarry.</roll>
+        </rolltable>
+        <rolltable type="Consume" person="Event Revealer">
+            <roll min="1" max="3">It seems you weren't the only one with this idea! You attempt to cough out the refuse, but your mouth is full of wriggling parasites! They borrow upwards through your nasal cavity into your brain. From now on, you always feel slightly dizzy. Suffer -1 permanent evasion.\nIn addition, if you have the Quixotic disorder, the parasites savor the unique neural activity of your brain, feeing relentlessly and excreting waste which further fuels your madness. Gain +10 insanity and the Immortal disorder. Your Quixotic disorder can never be removed for any reason.</roll>
+            <roll min="4" max="6">It's repulsive. Your title becomes "Scat Man". Everyone in the settlement must call you by that name from now on.</roll>
+            <roll min="7" max="+">There was something quite special about the feces. Gain +1 speed and +1 strength token.</roll>
+        </rolltable>
+    </event>
+    <event name="Destiny-Bound" number="12">
+        <text>The survivors collectively feel a heightened level of anticipation. Their goal is close at hand. The event revealer gains +1 courage! The survivors may skip the next hunt space. If this movement starts the showdown, the survivors ambush their quarry.</text>
+    </event>
+    <event name="Overload" number="13">
+        <text>The event revealer falls to their knees, sobbing uncontrollably. They've simply had too much. They lose d10 survival and gain 1 random disorder.\nIf the settlement has Accept Darkness, the event revealer embraces their despair. Roll 1d10.\nIf the settlement has Collective Toil, they slowly pull themselves to their feet, promising to never give up hope. Roll 1d10.</text>
+        <rolltable person="Event Revealer">
+            <roll min="1" max="5">The depths of your misery are deeper than you could have ever imagined. Gain disorders until you have 3 of them. Lose all survival.</roll>
+            <roll min="6" max="+">You sink to the bottom of your misery then scrape its very foundations, hungry for more! You uncover a primal rage surrounding a core of serene calm. Gain +1 understanding and the Rageholic disorder.</roll>
+        </rolltable>
+        <rolltable person="Event Revealer">
+            <roll min="1" max="5">You rise, silent tear streaming down your face. With the settlement at your back, you are ready to face the darkness. Gain +1 courage and +1d10 survival.</roll>
+            <roll min="6" max="+">You briefly touch the bottom of your misery and return to full awareness with new experiences to share. If any survivors return to the settlement this year, gain +2 endeavors</roll>
+        </rolltable>
+    </event>
+    <event name="Chance Encounter" number="14">
+        <text>The survivors encounter a bewitching, barefoot waif with soot-covered feet. If you already rolled this event on this hunt, or if all survivors are insane, she turns her back and disappeas into the darkness. Roll again on the hunt event table before moving on the hunt board.\nOtherwise, exclaiming wildly at the survivors, the woman's presence fills everyone with the alien feeling of hope. All survivors gain +1 courage, +1 understanding.\nIf the settlement has Hovel, she snaps her fingers and ages before your eyes! A chill passes over the survivors. Their bodies and armor spontaneously knit themselves back together. Heal all injury levels and lost armor points. Then, she pulls a random survivor aside and whipsers secrets of the upcoming hunt. They gain +1 accuracy token.</text>
+    </event>
+    <event name="Man-Trap" number="15">
+        <text>The event revealer springs a terrible trap! Roll 1d10.</text>
+        <rolltable person="Event Revealer">
+            <roll min="1" max="2">With a terrible crash, the steel jaws of the man-trap cleanly sever your foot. Suffer the dismembered leg severe injury.</roll>
+            <roll min="3" max="6">Mangled leg. Destrol all armor at the legs location, then suffer 1 event damage to the legs.</roll>
+            <roll min="7" max="9">The trap is quite old and wak. Suffer 1 event damage to the legs.</roll>
+            <roll min="10" max="+">The event revealer's foot knocks into the trap, giving everyone a scare! However, it was already sprung, leaving an unfortunate prize in its jaws. Gain 1 random basic resource.</roll>
+        </rolltable>
+    </event>
+    <event name="Night Terrors" number="16">
+        <text>Your miserable sleep is plagued with mind-bending nightmares. Each survivor rolls 1d10. If the result is greater than their insanity, they learn something from the waking horror and gain +1 understanding. Otherwise, they gain 1 random disorder.&#xD;&#xA;If any survivor is a savior or has the Extra Sense fighting art, they disappear into the dream, emerging from the darkness hours late. They gain +4 Hunt XP and a random basic resource.</text>
+    </event>
+    <event name="Face-to-Face" number="17">
+        <text>Amidst the sea of stone faces, one catches the event revealer's eye. They feel compelled to investigate. Gain +1 courage and roll 1d10.</text>
+        <rolltable person="Event Revealer" type="Investigate">
+            <roll min="1" max="1">The face is identical to your own. Spend 1d5 survival or reduce your understanding to 0.</roll>
+            <roll min="2" max="7">The face reminds you of someone dear. Your heart aches with loneliness. If your survival is greater than your insanity, suffer monster level brain event damage.</roll>
+            <roll min="8" max="+">The face is your own but older and wiser. Gain +1 survival and +1 understanding.</roll>
+        </rolltable>
+    </event>
+    <event name="Dead Weed" number="18">
+        <text>You find a strange plant growing from the eyes of a stone face. The event revealer tries to harvest it. Roll 1d10. If any survivor has a sickle, add +4 to their roll.</text>
+        <rolltable person="Event Revealer">
+            <roll min="1" max="7">Try as you might, you cannot pull out the deeply rooted weed.</roll>
+            <roll min="8" max="+">You pull the weed free! It has enourmous regenerative power. Each survivor rubs it on their skin and removes 1 permanent severe injur. Then it crumbles into dust in your hands.</roll>
+        </rolltable>
+    </event>
+    <event name="Exhalation of Darkness" number="19">
+        <text>The survivors are enveloped in a steamy darkness that dims their lantern lights. They become separated from each other and hopelessly lost. If a survivor has the Leader fighting art, they boldly stride into the clammy darkness and gather everyone. Otherwise, each survivor rolls 1d10. The lowest scoring survivor (or survivors, in case of ties) becomes a straggler. Each straggler rolls 1d10.</text>
+        <rolltable person="Straggler">
+            <roll min="1" max="2">You trip and fall into the bones of an ancient monster, smashing a piece of gear on the way down. Archive 1 gear of your choice from your gear grid.</roll>
+            <roll min="3" max="5">Something unseen attacks you, suffer 1 brain event damage and 1 event damage to a random location.</roll>
+            <roll min="6" max="8">You bang into a giant stone face's nose! Suffer 1 head event damage.</roll>
+            <roll min="9" max="+">You're not sure how, but you leave the darkness with your hands full. Gain 1 random basic resource.</roll>
+        </rolltable>
+    </event>
+    <event name="Dry Lands" number="20">
+        <text>As the survivors press forward, the air turns dry and the ground cracks. The survivors suffer heat exhaustion. Each survivor loses 1 survivoal. If they are wearing fur or heavy gear, they instead lose d5 survival.&#xD;&#xA;If any survivor has a pickaxe, the survivors break open an interesting-looking veing in the cracked ground. Gain 1 Iron strange resource.</text>
+    </event>
+    <event name="Drawings" number="21">
+        <text>Cowering in a cave, the survivors find strange drawings decorating the walls. They appear to contain a message. Any survivor with 3+ understanding may try to decipher the drawings by rolling 1d10. If the settlement has Pictographs, every survivor may roll (regardless of their understanding) and add +4 to their rolls.</text>
+        <rolltable person="Any Survivor with 3+ understanding">
+            <roll min="1" max="3">Your nose begins to bleed. Suffer monster level brain event damage.</roll>
+            <roll min="4" max="7">The true meaning escapes you. Gain +1 insanity.</roll>
+            <roll min="8" max="+">The drawings teach you a new way to fight monsters! Gain +2 survival and a random fighting art.</roll>
+        </rolltable>
+    </event>
+    <event name="Acid Rain" number="22">
+        <text>The darkness above is suddenly alight with a storm of acid rain. It smells terrible, burns flesh, and forms hissing pools in the upturned mouths of the stone faces. All survivors suffer monster level event damage to every hit location as they scamble to find shelter.&#xD;&#xA;If the settlement has Sculpture, the survivors silently watch the storm erode the stone faces, erasing their features. They wonder exactly who or what repairs the broken faces, if there is such a thing. The survivors share a dark laugh, each gaining monster level survival.&#xD;&#xA;Roll 1d10. On a 6+ the storm moves homeward. Add the Acid Storm settlement event to the timeline next year.</text>
+    </event>
+    <event name="Clean Water" number="23">
+        <text>The survivors pass a forlorn fountain in the shape of a lion's face. A stream of crystal-clear water flows from its mouth. Each survivor consumes the water, gaining +1 survival and +1 courage. Any number of survivors may douse their head in the water and roll 1d10.</text>
+        <rolltable person="Any Survivor">
+            <roll min="1" max="2">The instant it becomes wet, your hair turns stark white. Gain 1 random disorder.</roll>
+            <roll min="3" max="5">Your hair is wet. Congratulations.</roll>
+            <roll min="6" max="8">The water is bracing. Gain +1 understanding or remove a disorder of your choice.</roll>
+            <roll min="9" max="+">The water is shockingly cold! It rushes over you like a tidal wave and leaves you awestruck. Set your insanity to 0 and remove all disorders.</roll>
+        </rolltable>
+    </event>
+    <event name="Food from the Mouths of Oters" number="24">
+        <text>The survivors pass a stone face that appears to be holding something in its mouth. The event revealer investigates. Gain +1 courage and roll 1d10.</text>
+        <rolltable person="Event Revealer" type="Investigate">
+            <roll min="1" max="2">You yell out in pain and pull your hand back, revealing a bloody gash. Did the stone face just bite? Suffer monster level brain event damage and monster level event arm damage.</roll>
+            <roll min="3" max="5">There's nothing. It was just a trick of the lantern light.</roll>
+            <roll min="6" max="8">More rocks, what did you expect? Gain 1 Founding Stone starting gear.</roll>
+            <roll min="9" max="+">You pull out a masticated mass. Gain 1 random basic resource and 2 insanity.</roll>
+        </rolltable>
+    </event>
+    <event name="Titans in the Dark" number="25">
+        <text>An earsplitting bellow marks the passing of a truly titanic beast. All non-deaf survivors suffer monster level brain event damage. The survivors cower on the ground, lying as lfat as possible and hoping they are simply to small to be worth eating.&#xD;&#xA;Each survivor rolls 1d10. The lowest scoring survivor (or survivors, in case of ties) becomes a straggler. If any survivor has noisy gear, -2 to their roll. &#xD;&#xA;Each straggler rolls 1d10.</text>
+        <rolltable person="Straggler">
+            <roll min="1" max="1">You're plucked from the ground and eaten whole. Dead. If the settlement has Survival of the Fittest, you twist out of its mouth and land with a thud. Suffer the broken arm and broken leg severe injuries but do not die.</roll>
+            <roll min="2" max="4">Something snatches you in its great maw and chews you for 1 event damage to 1d5 random hit locations.</roll>
+            <roll min="5" max="6">The clamping jaws barely nip you! Suffer monster level event damage to a random hit location.</roll>
+            <roll min="7" max="9">You make yourself extra flat against the ground and avoid anything terrible.</roll>
+            <roll min="10" max="+">You will never stop running from what you saw. GAin +1 permanent movement.</roll>
+        </rolltable>
+    </event>
+    <event name="Pit" number="26">
+        <text>The ground bneath the event revealer's feet gives way and they plummet into a pit below. The event revealer rolls 1d10.&#xD;&#xA;If another survivor has a whp, they throw you a line in time; do not roll on the table.&#xD;&#xA;If the event revealer has the Tumble fighting art, they nimbly catch a ledge and haul themselves up; gain +1 speed token and do not roll on the table.</text>
+        <rolltable person="Event Revealer">
+            <roll min="1" max="1">You land with a sickening crunch, mangling your legs. Suffer the broken leg severe injury twice.</roll>
+            <roll min="2" max="3">Your leg breaks your fall. Suffer the broken leg severe injury.</roll>
+            <roll min="4" max="6">You land at the bottom with a loud thud. Suffer 2 event damage to a random hit location and archive all fragil gear in your gear grid.</roll>
+            <roll min="7" max="9">You land at the bottom with a soft thud. Suffer 1 event damage to a random hit lcoation.</roll>
+            <roll min="10" max="+">You manage to grab the edge of the pit and escape unharmed.</roll>
+        </rolltable>
+    </event>
+    <event name="Man-Stealers" number="27">
+        <text>Exhausted, the survivors rest. During their fitful sleep, a small insect approaches undetected. Choose 1 random male survivor and roll on the table. If there are no male survivors, nothing happens.&#xD;&#xA;If the chosen survivor has the Unconscious Fighter fighting art, they crush the bug while still snoring; do not roll on the table. They wake, confused, with random vermin resource in their hands.</text>
+        <rolltable person="Random Male Survivor">
+            <roll min="1" max="5">When you wake, your genitals have been stolen. In their place is nothing but smooth skin. Suffer the destroyed genitals severe injury.</roll>
+            <roll min="6" max="+">You wake with a start, terrified to find menacing pincers approaching. Your defenses are quick. Without thinking, you wallop the insect craling on your pants, suffering 1 event damage to the waist.</roll>
+        </rolltable>
+    </event>
+    <event name="Trollbird" number="28">
+        <text>A rumpled, unsightly bird stands in the survivor's path. Its beady, wet eyes blink expectantly and it calls out with an eerie human chuckle. The survivors may archive 1 consumable item or gear, offering it to the trollbird. If any survivor is insane, they must feed the trollbird, if able. If they feed the trollbird, it hops off with a terrible cackle.&#xD;&#xA;If they don't feed the trollbird, it follows the survivors on their hunt, constantly mocking them with its chuckle. Roll 1d10. If any survivor has the Coprolalia disorder, they curse at the bird and make vigorous and vulgar gestures. The bird is impressed. Add +3 to your roll.</text>
+        <rolltable person="Event Revealer">
+            <roll min="1" max="5">The trollbird makes a terrible racket, alerting the monster. All survivors gain +1 understanding. At the start of the showdown, the monster ambushes the survivors.</roll>
+            <roll min="6" max="+">The trollbird mocks and distracts the monster as teh survivors sneak up. All survivors gain +1 insanity. At the start of the showdown, the survivors ambush teh monster.</roll>
+        </rolltable>
+    </event>
+    <event name="Dark Blacksmith" number="29">
+        <text>The survivors cross paths with a tall, unnaturally thin man in a hooded robe. Where his feet strike the ground, sparks illuminate his path.&#xD;&#xA;Each survivor with 3+ courage may give him one piece of gear from their gear grid and roll on the table. If they have the Honoralbe disorder, add +3 to their roll.</text>
+        <rolltable person="Any Survivor with 3+ courage">
+            <roll min="1" max="2">The creature raises the object to its mouth and eats it. It's gone. Archive the gear card.</roll>
+            <roll min="3" max="6">The creature refuses the gear and stares at you with a single, large eye. Suffer 1d10 brain event damage.</roll>
+            <roll min="7" max="8">The creature unhinges its jaw and eats the piece of gear. In return, it hands you a shining shield. Gain the steel shield rare gear.</roll>
+            <roll min="9" max="+">The creature unhinges its jaw and eats the piece of gear. In return, it hands you a shining sword. Gain the Steel Sword rare gear.</roll>
+        </rolltable>
+    </event>
+    <event name="Rotten Faces" number="30">
+        <text>The stone faces start to give under the survivor's feet. They are bloated and smell terrible. Each survivor rolls 1d10.</text>
+        <rolltable person="Each survivor">
+            <roll min="1" max="1">Your foot gets stuck and you quickly begin to sink into the ground. After a struggle you manage to break free. If you had leg armor, it is lost in the muck. Spend 3 survival or archive the gear.</roll>
+            <roll min="2" max="5">Mired, you struggle to break free! Roll again on this table or spend 1 survival to escape.</roll>
+            <roll min="6" max="9">You escape without incident.</roll>
+            <roll min="10" max="+">You find something gross drudging through the rot! Gain 1 random basic resource.</roll>
+        </rolltable>
+    </event>
+    <event name="Strange Path" number="31">
+        <text>The survivors stop at the head of a path. Small lanterns twinkle, marking its edges.&#xD;&#xA;The event revealer decides whether or not the survivors follow the path. If the event revealer is insane, they must. If the survivors follow the path, they event revealer gains +1 understanding then rolls 1d10 and adds their understanding.&#xD;&#xA;Otherwise, roll again on the hunt event table before moving on the hunt board.</text>
+        <rolltable person="Event Revealer">
+            <roll min="1" max="1">A colossal finger descends from above, crushing a random survivor. They suffer 2 event damage to every hit location.</roll>
+            <roll min="2" max="4">A random survivor tears off hysterically along a branch in the path. They return hours later, ghostly pale and with no recollection of what happened. They lose 1d10 survival.</roll>
+            <roll min="5" max="7">The path twists and turns dizzyingly into the dark. All survivors suffer 1 brain event damage and the event revealer rolls again on this table, adding +2 to their roll.</roll>
+            <roll min="8" max="9">The path leads the survivors to a large stone face with lanterns for eyes. Inside its open mouth is bounty. Each survivor gains 1 random basic resource.</roll>
+            <roll min="10" max="+">The path leads to the beast you are hunting! the survivors ambush the monster. If any survivor has the Honorable disorder, they realize the folly of their ways and may remove the disorder. If any survivors remain Honorable, they announce their presence to the monster; the monster ambushes the survivors instead.</roll>
         </rolltable>
     </event>
 </huntevents>

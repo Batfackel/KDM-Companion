@@ -1,5 +1,7 @@
 package com.conyargmail.kingdomdeathmonstercompanion;
 
+import java.util.ArrayList;
+
 /**
  * Created by Ryan on 4/30/2017.
  */
@@ -8,20 +10,18 @@ public class Event {
     private String name;
     private String eventText;
     private int eventNumber;
-    private RollTable table;
+    private ArrayList<RollTable> table;
 
     public Event() {
         this.setName("blank");
         this.setEventText("blank");
         this.setEventNumber(0);
-        this.setTable(new RollTable());
     }
 
-    public Event(String name, String eventText, int eventNumber, RollTable table) {
+    public Event(String name, String eventText, int eventNumber) {
         this.setName(name);
         this.setEventText(eventText);
         this.setEventNumber(eventNumber);
-        this.setTable(table);
     }
 
     public String getName() {
@@ -48,11 +48,26 @@ public class Event {
         this.eventNumber = eventNumber;
     }
 
-    public RollTable getTable() {
+    public ArrayList<RollTable> getTable() {
         return table;
     }
 
-    public void setTable(RollTable table) {
+    public String getTableFormatted() {
+        String formattedTable = "------\n";
+        if(table != null) {
+            for (int i = 0; i < table.size(); i++) {
+                formattedTable += table.get(i).getFormattedTable();
+            }
+        }
+        return formattedTable;
+    }
+
+    public String getFormattedEvent() {
+        String formattedEvent = String.format("Name: %s\n\nEvent Number: %s\n\nText: %s\n\nRoll Table: %s", getName(), getEventNumber(), getEventText(), getTableFormatted());
+        return formattedEvent;
+    }
+
+    public void setTable(ArrayList<RollTable> table) {
         this.table = table;
     }
 }
