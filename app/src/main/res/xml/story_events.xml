@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<storyevents>
+    <event name="Age">
+        <flavortext>Your time in the darkness changes you.</flavortext>
+        <text>Gain the benefits for the Hunt XP milestone you have reached. A Survivor may only gain each milestone benefit once a lifetime.</text>
+        <rolltable dice="2">
+            <text>You may now select a weapon type for weapon proficiency. (if you wound a monster with the selected weapon type, you are now eligible to gain a proficiency level during the aftermath). Roll on the table below.&#xD;&#xA; Availble Weapon Types&#xD;axe, bow, club, dagger, fist and tooth, grand weapon, katar, shield, spear, sword, and whip.</text>
+            <roll min="2" max="2">Gain +1 permanent evasion.</roll>
+            <roll min="3" max="6">Gain +1 permanent strength.</roll>
+            <roll min="7" max="15">Gain 1 random fighting art.</roll>
+            <roll min="16" max="19">Gain +1 permanent accuracy.</roll>
+            <roll min="20" max="+">Gain +1 permanent luck.</roll>
+        </rolltable>
+        <rolltable dice="2">
+            <text>The years sharpen your reflexes.&#xD;&#xA;Roll on the table below.</text>
+            <roll min="2" max="2">Gain +1 ermanent movement.</roll>
+            <roll min="3" max="6">Gain 1 random fighting art.</roll>
+            <roll min="7" max="15">Gain +1 permanent strength.</roll>
+            <roll min="16" max="19">Gain 1 random fighting art.</roll>
+            <roll min="20" max="+">Gain +1 permanent speed.</roll>
+        </rolltable>
+        <rolltable dice="2">
+            <text>Experience sharpens your instincts.&#xD;&#xA;Roll on the table below.</text>
+            <roll min="2" max="2">Gain +1 permanent speed.</roll>
+            <roll min="3" max="6">Gain +1 permanent movement.</roll>
+            <roll min="7" max="15">Gain 1 random fighting art.</roll>
+            <roll min="16" max="19">Draw 2 random fighting arts and gain 1.</roll>
+            <roll min="20" max="+">Gain +3 permanent strength.</roll>
+        </rolltable>
+        <rolltable dice="2">
+            <text>Age is the rarest resource of all.&#xD;&#xA;Roll on the table below.</text>
+            <roll min="2" max="2">Draw 5 random fighting arts and gain 1.</roll>
+            <roll min="3" max="6">Gain +1 permanent evasion.</roll>
+            <roll min="7" max="15">Gain +1 permanent luck.</roll>
+            <roll min="16" max="19">Gain +1 permanent speed.</roll>
+            <roll min="20" max="+">Gain +1 permanent attribute of your choice.</roll>
+        </rolltable>
+    </event>
+    <event name="Armored Strangers">
+        <text>You are visited by enigmatic figures, fully-enclosed in armor. They march silently through the sellement. The only noise is a metallic clang, as they pause before each survivor and tap their lanter halberds against the ground. The survivors have no choice but to helplessly await their mute deliberations.&#xD;&#xD;Add King's Man to the nemesis encounter list. The Strangers Count People and take action based on teh population total.</text>
+        <option name="Resist">You rise ! Add Special Showdown - King's Man Level 1 to the timeline this year. (after the showdown, heal the returning survivors, then resume this year's settlement phase at the update death count step. Do not gain (endevour), draw a settlement event card, or advance a lantern year.)</option>
+        <option name="Count People">7 or less&#xD;-Supportive Action-&#xD;Finally, one of them drives a lantern halberd into the ground. They leave without a word. Add the Guidepost innovation to the settlement.&#xD;The strangers plan to return. Add Armored Strangers to the timeline 4 years from the current year. Roll on the table below.</option>
+        <rolltable>
+            <roll min="1" max="3">A survivor's ears fill with the painful static! A random returning survivor gains a random disorder.</roll>
+            <roll min="4" max="7">The armored strangers dump a mangled, unidentifiable corpse on the ground. Gain 3 random basic resources.</roll>
+            <roll min="8" max="+">The armored strangers haul in a massive, bountiful beast corpse. The survivors wonder at this boon. Gain 6 random basic resources. Departing survivors gain +1 survival.</roll>
+        </rolltable>
+        <option name="Count People">8 or more&#xD;-Destructive Action-&#xD;The strangers finish their count and draw their blades. Roll on the table below.</option>
+        <rolltable>
+            <roll min="1" max="4">The armored strangers wantonly execute survivors. Suffer -5 population. You may Resist to avoid this loss.</roll>
+            <roll min="5" max="7">The bravest survivors are rounded up. Select the survivor with the highest courage (in case of a tie, select all) and execute them. You may Resist to avoid this loss.</roll>
+            <roll min="8" max="9">The strangers destroy a random innovatin. Return the lost innovation card to the settlement's innovation deck. The survivors may choose to Resist to avoid this loss.</roll>
+            <roll min="10" max="+">A halberd is left in the settlement with a survivor impaled on it as a reminder. Suffer -1 population. Add the Guidepost innovation to the settlement.</roll>
+        </rolltable>
+    </event>
+    <event name="Birth of a Savior">
+        <flavorText>The newborn vanishes from the loving arms of the settlement for a fraction of a second. In that second, it spends a lifetime in the domain of the Ethereal Dreamer and returns with a Dream. Choose one:</flavorText>
+        <option name="Dream of the Beast">The newborn Savior gain 1 permanent red affinity, +1 permanent strength, and the following abilities:&#xD;Caratosis: Before making an attack roll, you may declare "Caratosis X" in a loud, booming vice. If you do, that attack gainx X automatic hits. X cannot be more than your total red affinties. When the attack ends, gain +X hunt XP.&#xD;When you trigger Age2, gain the Beast of Caratosis secret fighting art.&#xD;Life Exchange: In the Aftermath, gain 1 additional Hunt XP. You may not wear other gear. If you trigger the White Secret story event, you cease to exist. When you retire, you cease to exist.</option>
+        <option name="Dream of the Crown">The newborn Savior gain 1 permanent green affinity, +1 permanent evasion, and the following abilities:&#xD;Dormenatus: When you suffer damage, you may declare "Dormenatus X" in a loud, booming voice, if you do, gain (X armour) to each hit locatin. X cannot be more than your total green affinities. After the damage is resolved, gain +X hunt XP.&#xD;When you trigger Age 2, gain the Grace of Dormenatus secret fighting art.&#xD;In the Aftermath, gain 1 additional Hunt XP. You may not wear other gear. If you trigger the White Secret story event, you cease to exist. When you retire, you cease to exist.</option>
+        <option name="Dream of the Lantern">The newborn Savior gain 1 permanent blue affinity, +1 permanent luck, and the following abilities:&#xD;Lucernae: Before making a wound attempt, you may declare "Lucernae X" in a loud, booming voice. If you do, that would attempt gains X Luck. X cannot be more than your total blue affinities. When the attack ends, gain +X hunt XP.&#xD;When you trigger Age 2, gain the Lucernae's Lantern secret fighting art.&#xD;Life Exchange: IN the Aftermath, gain 1 additional Hunt XP. You may not wear other gear. If you trigger the White Secret story event, you cease to exist. When you retire, you cease to exist.</option>
+    </event>
+    <event name="Bold">
+        <flavortext>In a single moment, your perspective changes profoundly.</flavortext>
+        <text>Select the triumph corresponding to the current game phase. A survivor may only gain these benefits once a lifetime.</text>
+        <option name="Showdown Phase Triumph">The essential difference between man and monster is a gap no human can overcome. You accept this and tap into a deep well of deranged fortitude. Gain the following ability and roll on the table below.&#xD;Stalwart: Ignore being knocked down by brain trauma and intimidation actions.</option>
+        <rolltable>
+            <roll min="1" max="3">Gain +1 strength token.</roll>
+            <roll min="4" max="7">Gain +3 survival and +3 insanity.</roll>
+            <roll min="8" max="9">Gain +1 permanent strength.</roll>
+            <roll min="10" max="+">Gain +1 permanent speed.</roll>
+        </rolltable>
+        <option name="Hunt Phase Triumph">Expect the unexpected. You are prepared to face any mind-bending trials at a moment's notice. Where others may falter, you forge ahead, meeting the journey head on. Gain the following ability and roll on the table below.&#xD;When rolling to determine a straggler, add your hunt experience to your roll result.</option>
+        <rolltable>
+            <roll min="1" max="3">Gain +1 speed token for showdown.</roll>
+            <roll min="4" max="7">Gain +1 understanding.</roll>
+            <roll min="8" max="9">Gain +1 permanent strength.</roll>
+            <roll min="10" max="+">Gain +1 permanent movement.</roll>
+        </rolltable>
+        <option name="Settlement Phase Triumph">In the fleeting existence, every moment shared creates meaning. The bonds forged between survivors give you hope. Gain the following ability and roll on the table below.&#xD;Matchmaker: When you are a returning survivor, once per year you spend (endevour) to Intimacy.</option>
+        <rolltable>
+            <roll min="1" max="3">May reroll 1 (endevour) result this settlement phase.</roll>
+            <roll min="4" max="7">Gain +1 (endevour) this settlement phase.</roll>
+            <roll min="9" max="9">Gain +1 permanent strength.</roll>
+            <roll min="10" max="+">Gain +1 permanent accuracy.</roll>
+        </rolltable>
+    </event>
+    <event name="Bone Witch">
+        <flavortext>One day, the exile emerged from the darkness. The settlement worried at the sound of her wailing chants. Everyone feared what mystery kept her alive in the darkness all these years. Some could not resist asking.</flavortext>
+        <text>All non-deaf returning survivors gain +3 insanity. The most insane returning survivor (or survivors in case of a tie) is inexorably drawn to the Bone Witch and must endeavor at the Witch Camp. Otherwise, during this settlement phase, any survivor may endeavor at the Witch Camp if they choose.</text>
+        <rolltable cost="endevour">
+            <roll min="1" max="2">The bone witch never forgave her exile. Her burning hatred lit the dark brighter than any lantern. With jagged teeth and gnarled claws, she attacks! You manage to escape, but the wounds she inflicted continue to burn. The group may spend (3 endevour) to save you, otherwise you die a miserable wailing death. Departing survivors are haunted by your terrible death scene, they lose 2 survival and gain +3 insanity. &#xD;Add Bone Witch to the timeline 3 years from the current lantern year.</roll>
+            <roll min="3" max="4">The secrets of the dark should not be seen. The last thing ou see are the Bone Witch's outstretched claws reaching for your eyes. Your eyes are scarred. Roll 1d5, suffer -X permanent accuracy and gain +X permanent strength, where X is the result rolled. If you gain this result twice, you die.</roll>
+            <roll min="5" max="7">The Bone Witch mutters of the alluring embrace of the awaiting darkness. Her stories stir strange yearning in your bones. For being a patient listener, she offers to teach you something fo the cose of 1 bone resource.&#xD;If you spend the resource, gain the Extra Sense fighting art and +3 survival.</roll>
+            <roll min="8" max="10">The Bone Witch whispers of the horrors and wonders she has seen, arming you with valuable wisdom. Gain +2 insanity, +1 understanding, and the Bone Whisperer secret fighting art.</roll>
+            <roll min="10" max="10">If the settlement has the Guidepost innovation, the Bone Witch wanders over to it. The settlement is transfixed by a sense of danger. Effortlessly, the Witch plucks the weapon from the ground. Archive the Guidepost innovation.&#xD;As a consolation, she offers to teach the settlement something in exchange for 1 bone.&#xD;If you spend 1 bone, nominate 4 survivors. They gain the Monster Claw Style fighting art.</roll>
+        </rolltable>
+    </event>
+    
+</storyevents>
