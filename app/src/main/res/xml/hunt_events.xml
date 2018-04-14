@@ -416,10 +416,112 @@
             <roll min="10" max="+">The survivors are suddenly standing by their quarry! Start the showdown immediately.  </roll>
         </rolltable>
     </event>
-    <event name="" number="" >
-        <text></text>
-        <rolltable person="" >
-            <roll min="" max=""> </roll>
+    <event name="Tomb of Excellence" number="70" >
+        <text>The survivors find a serene, luxurious tomb, immaculate in its construction and condition. Elegant murals decorate the walls, depicting glorious victories over the very monster the survivors are hunting. The survivors are baffled by its presence. The event revealer investigates and rolls 1d10.</text>
+        <rolltable person="Event revealer" type="Investigate" >
+            <roll min="1" max="1">The survivors bemoan how eak they are compared to the warriors in the murals. All survivors lose 1 survival.</roll>
+            <roll min="2" max="5">It's nice to see something pretty for once, eh?</roll>
+            <roll min="6" max="9">The survivors can't remember ever feeling so cheerful and inspired. Each survivor gains +1 courage.</roll>
+            <roll min="10" max="+">The doorway to the tomb is framed with a wood that has small hands for grain. Inside, murals depict a hero at the center of a labyrith that is holding a giant, human-filled fruit above his head. Each survivor gains +1 understanding. If the settlement has Pictographs, the survivors find information about their quarry. At the start of the showdown, they may place the monster's trap at the bottom of the hit location deck.</roll>
+        </rolltable>
+    </event>
+    <event name="Found Relix" number="71" >
+        <text>Amidst the endless stone faces, the event revealer notices an unusual object on the ground. The event revealer investigates and rolls 1d10.&#xD;&#xA;If the settlement has Records, add +6 to the result.</text>
+        <rolltable person="Event revealer" type="Investigate" >
+            <roll min="1" max="2">You find a weathered, purple stone with a swirling texture. It is shockingly heavy. Mesmerized by the stone, you hide it from the other survivors. Gain the Secretive disorder and -1 movement token from lugging the stone around.</roll>
+            <roll min="3" max="4">Useless junk litters the ground.</roll>
+            <roll min="5" max="9">You find a stone heart that pulses with warmth as you hold it in your hands. Gain +1 insanity.</roll>
+            <roll min="10" max="+">You find a mask with living lips. If you return to the settlement with the mask, it quickly learns your language and shares its secrets before crumbling to dust. At the start of the next settlement phase, draw 3 innovations from the innovation deck and add one to your settlement at no cost.&#xD;If any survivor has a Final Lantern, it begins to flash and vibrate wildly. The mask disintegrates and all survivors suffer 1 brain event damage.</roll>
+        </rolltable>
+    </event>
+    <event name="Something to Pass the Time" number="72" >
+        <text>IF the settlement does not have Symposim, ignore this event and roll again on the hunt event table before moving on the hunt board. Otherwise, the event revealer suggests a word game to lighten the mood as the survivors trudge forward. The event revealer rolls 1d10. If the settlement has Song of the Brave, add +4 to your roll.</text>
+        <rolltable person="Event revealer" >
+            <roll min="1" max="2">The survivors' boisterous voices attract their quarry. The moster ambushes them.</roll>
+            <roll min="3" max="7">No one else is in the mood for a game. The event revealer loses 1 courage.</roll>
+            <roll min="8" max="9">The survivors play the simple but entertaining game. Each survivor gains +1 courage.</roll>
+            <roll min="10" max="+">The game is astonishingly fun and the survivors' spirits soar with their booming laughter. Each survivor rolls 1d10. On a 6+, they gain 1 survivoal or cure 1 disorder.</roll>
+        </rolltable>
+    </event>
+    <event name="Golden Ember" number="73" >
+        <text>The way forward is blocked by a dense, gold-flecked smoke. If the survivors have a Final Lantern, it guides them through the smoke without any trouble; end this event.&#xD;&#xA;The survivors may push ahead and brave the smoke. If they do, each survivor gains +1 courageand the event revealer rolls 1d10. If they don't brave the smoke, they take the long way around; roll again on teh huntevent table before moving on the hunt board.&#xD;&#xA;The survivors carefully descend into the crater, finding the ruins of a settlement surrounded by a ring of skulls. The settlement is absolutely demolished and almost everything has been ground to powder from some tremendous force. The skulls face away from the ruins and in each gaping mouth, a golden ember spews smoke.&#xD;&#xA;The sight is haunting; each survivors suffers 1d10 brain event damage and gains 1 random disorder. The survivors gingerly sift through the ruins. Nominate a survivor to investigate and roll 1d10.</text>
+        <rolltable person="Event revealer" >
+            <roll min="1" max="5">The smoke overwhelms the survivors. As they run through the glittering smog, each survivor suffers 1 event damage to the head and chest locations. When they finally breach the haze's end, they silently walk on. No one is comforatable sharing the terrible things they glimpsed. Each survivor gains 1 random disorder.</roll>
+            <roll min="6" max="+">The survivors grasp each other's hands, from a line, and traverse the smoke. They breathe through rags and take turns peeking out for orientation. Somewhere, deep within the smoke, they stumble across a crater. They may ignore it and escape the smoke (ending this event_ or explore the crater</roll>
+        </rolltable>
+        <rolltable person="Nominated survivor" type="Investigate">
+            <roll min="1" max="1">Against all reason, you feel compelled to reach into a skull and take an ember. Your flesh sizzles, blinding you with pain and yet you cannot stop yourself from reaching for your oun mouth. If you have a broken jaw, you're twarted. You drop the golden ember from your burning hand. Suffer the dismembered arm severe injury. Shaken, the survivors flee the smoke. Otherwise, your jaw clamps shut around the ember, the flesh of your mouth melts shut, muffling your cries of pain. Smoke pours from your eyes, nose, and ears. If the settlement has Survival of the Fittest, the urge to live wins out and you savagely break open your own jaw, Suffer the broken jaw severe head injury. The ember tumbles tot he ground, its sputtering hiss rining in your ears as all survivors flee in horror. Otherwise, your smoking, melting body marches robotically into the ring of skulls, laying itself in the place of the disturbed skull. The putrid smell of your burning brain suffuses the smoke in the air. The sight is so disturbing that all other suvivors flee, never to speak of what happened.</roll>
+            <roll min="2" max="4">You sense the extremem danger from the golden embers you linger just long enough to grab a small trinkey. Gain 1 Broken Lantern basic resource.</roll>
+            <roll min="5" max="8">You notice that the settlement is strewn with lanterns, all extinguished and smashed nearly beyond recognition. The survivors resolve that this will never happen to them. If any survivor returns to the settlement this year, gain +2 endeavors.</roll>
+            <roll min="9" max="+">Amidst the runs, you find only one unbroken object. A Twilight Sword. It rests, respectfully laid across a mostly undamaged survivors skeleton. IF the settlement does not have a Twilight Sword, and no survivor in the group has the Honorable disorder, you may nominate a survivor to gain the Twilight Sword rare gear. If you do and the Hodded Knight story event is not on the timeline, add it to the timeline 2 years from now.</roll>
+        </rolltable>
+    </event>
+    <event name="Antler-Gouged" number="74" >
+        <text>A great battle for dominance between two enormous antelopes has left the stone-faced ground gouged with crisscrossing scars. Each survivor rolls 1d10.</text>
+        <rolltable person="Each survivor" >
+            <roll min="1" max="2">You trip over the jagged ground and shred your flesh! Suffer the torn muscle severe leg injury.</roll>
+            <roll min="3" max="8">You carefully tread over the destroyed faces.</roll>
+            <roll min="9" max="+">You find a loosened stone. Gain a Founding Stone starting gear.</roll>
+        </rolltable>
+    </event>
+    <event name="Oops!" number="75" >
+        <text>Stumbling through the darkness, the event revealer crashes into the ground, crushing their lantern beneath them. The living light inside the lantern becomes agitaged by the survivor's clumsiness and burns a piece of gear. The event revealer archives 1 gear of their choice from their gear grid.</text>
+    </event>
+    <event name="Dream the Way" number="76" >
+        <text>The survivors have vivd, fevered vision of what lies ahead. All at once, they are startled awake and frantically compare the horrors they saw.&#xD;&#xA;Each survivor rolls 1d10. If any survivors is a savior, their powerful dream envelopes the group; each survivor may select whatever die roll result they want. If any survivors' rolls are the smae, theose survivors discover they had the exact same dream. They gain +1 insanity. If any duplicate rolls are 1-s, the event revealer may re-roll any one roll result this hunt phase (any one die roll, not just their roll).</text>
+    </event>
+    <event name="Sinkhole" number="77" >
+        <text>A gaping sinkhole suddenly opens under the survivors, revealing a swirling black pool of ichor beneath them. Each survivor rolls 1d10. The lowest scoring survivor (or survivors, in case of ties) becomes a straggler.&#xD;&#xA;Each straggler rolls 1d10. If any other survivor has a whip, they throw a line to the straggler. Each straggler adds +4 to their roll.</text>
+        <rolltable person="Straggler" >
+            <roll min="1" max="1">You are swallowed by the sinkhole, moments later it regurgitates you completely naked. Your gear is hopelessly lost in the miasma. Archive all gear in your gear grid.</roll>
+            <roll min="2" max="4">The other survivors haul you up, but not before something is sucked below the surface. Archive 1 gear of your choice from your gear grid.</roll>
+            <roll min="5" max="9">You are dragged to safety, terrified but unharmed.</roll>
+            <roll min="10" max="+">After a monumental effort, the other survivors pull you free. Someone is clinging tightly to your feet (+1 population)! As they retreat to your settlement, each survivor suffers 1 brain event damage.</roll>
+        </rolltable>
+    </event>
+    <event name="Dead Great Game Hunter" number="78" >
+        <text>The survivors find a corpse dressed in brightly-colored clothing, clutching something to its chest. The event revealer may investigate. If they do, they gain +1 courage and roll 1d10. If any survivor has a whip, they lash the corpse from afar; add +4 to your roll.&#xD;&#xA;Otherwise, roll again on the hunt event table before moving on the hunt board.</text>
+        <rolltable person="Event revealer" type="Investigate" >
+            <roll min="1" max="1">He was holding an explosive! Moving it causes it to detonate, blowing off your hand. Suffer the dismembered arm severe arm injury.</roll>
+            <roll min="2" max="4">He was holding an explosive! It explodes, but you pull away before disaster strikes. Gain -1 accuracy token.</roll>
+            <roll min="5" max="9">His hands are empty. If the settlement has Cannibalize, gain 1 random basic resource. If the settlement has Graves, gain +1 understanding.</roll>
+            <roll min="10" max="+">His hands contain a jeweled bottle filled with a chartreuse liquid. Gain 1 Frenzy Drink gear.</roll>
+        </rolltable>
+    </event>
+    <event name="Dying Small Prospector" number="79" >
+        <text>If your settlement already has a Portcullis Key, the prospector is gone. Roll again on the hunt event table before moving on the hunt board.&#xD;&#xA;The survivors discover a body slumped against a large stone face. Moving closer, they find a small, dying prospector riddled with arrows. As they approach, he growls a warning, threatening them with a huge stone shard. When he sees that they are not evil monsters, he calms down and gives them a key. With his dying breath hea says: "This is the key to the portcullis. Without it, you will never get through"&#xD;&#xA;Record the Portcullis Key in the settlement record sheet notes.&#xD;&#xA;If the settlement has Graves, the event revealer builds a small monument of broken stone noses and gains +1 understanding.</text>
+    </event>
+    <event name="Lovelorn Rock" number="80" >
+        <text>The survivors pass a ring of stones with an unassuming boulder at the center. Each survivor rolls 1d10. The lowest scoring survivor (randomize in case of ties) becomes a straggler.&#xD;&#xA;The straggler hefts the boulder (it's heavy!) and promises to carry it everywhere, forever in love. They amust always leave one space in their gear grid empty, as it contains their beloved rock. Record this on your survivor sheet. The rock can be lost or archived like other gear; if it is lost, the survivor mourns their beloved and reclaims the space in their gear grid.</text>
+    </event>
+    <event name="Field of Arms" number="81">
+        <text>The survivors carefully tread along the back of a massive, sleeping monster. Instead of fur, it has elongated arms, several of them twitching to whatever dream the great beast is in the misdst of. The survivors don't disturb the monster's deep sleep and cross without issue.&#xD;&#xA;If any survivor has a sickle, they gingerly remove some tough skin from one of the arms and gain 1 Hide basic resource.</text>
+    </event>
+    <event name="Consuming Grass" number="82">
+        <text>Vibrant green grass grows in patches ahead of the survivors. Closer inspection of the delicate leaves reveals they are as sharp as any blade. Each survivor rolls 1d10. They lowest scoring survivor (or survivors, in case of ties) becomes a straggler. As the survivors carefully pick their way past the verdant hazards, the straggler stumbles into the brush. They rolls 1d10..&#xD;&#xA;If any survivor has a whip, a hasty tether is made. Add +4 to your roll.</text>
+        <rolltable person="Straggler">
+            <roll min="1" max="1">You land in the grass patch. As you climb to your feet, you realize it's too late. The parts of your body that touched the ground have sprouted with sharp blades of grass. Any attempt to remove them only spreads them further over your body. During the showdown, you are never a threat (ignore any effect that would make you a threat, even the White Lion's Sniff). At the end of the showdown, your body blossoms inot a whorl of immaculate green grass. Dead.</roll>
+            <roll min="2" max="9">You fall but manage to interpose something between the grass and your bare skin. Either archive 1 gear of your choice from your gear grid to protect yourself, or treat this result as if you rolled a 1.</roll>
+            <roll min="10" max="+">You stop your fall before it's too late.</roll>
+        </rolltable>
+    </event>
+    <event name="Flesh Monolith" number="83">
+        <text>The survivors approach a 5-sided monolith made of flesh that stretches into the darkness overhead. Limbs and faces both human and bizarre protrude from all sides. The event revealer gains +1 courage and investigates.</text>
+        <rolltable persone="Event revealer" type="Investigate">
+            <roll min="1" max="1">The monolith's limbs spring to life, grabbing hold before you can react. They join your body parts to its own with maddening efficiency as you are ripped apart in a shower of gore. Dead. The horrible sight causes all other survivors to suffer 3 brain event damage and they all gain Post Traumatic Stress disorder. If the settlement has Survival of the Fittest, you fight the monolith! The horrible edifice tears your arm off, but you bite one of its appendages in return, severing it! The monolith retreats inot the ground as you roar in triumpth. Suffer the dismember arms evere injury and gain +1 permanent strength. All other survivors stand in awe and gain +3 insanity and +1 courage.</roll>
+            <roll min="2" max="4">Hands and tentacles grasp at you. Spend 1 survival to wriggle away or treat this result as if you rolled a 1.</roll>
+            <roll min="5" max="9">All survivors are driven back with horror. They all suffer quarry's monster level brain event damage.</roll>
+            <roll min="10" max="+">As the survivors draw near, they discover that this flesh monolith is actually an enormous pile of survivors' corpses, many with badly broken limbs. The pile is covered in chunks of strange, sweet-smelling viscera.&#xD;If the settlement has Graves, you ascend the heap and find 3 barely living survivors, their bodies devoid of nourishment and their eyes too sensitive for lantern light. If you return to the settlement, +3 population. These new survivors cannot depart for 2 lantern years as they need time to recover (note this on the timeline).&#xD;Otherwise, all you manage to harvest from the pile of emaciated corpses is 2 Organ basic resources. Their skin is too soft and bones too brittle to be of any use.</roll>
+        </rolltable>
+    </event>
+    <event name="Scribe's Book" number="84">
+        <text>A huge, ornately bound book lays open before the survivors. If the settlement has Pictographs, any survivor with 3+ courage may write their name in the book. Insane survivors with 3+ courage must write.&#xD;&#xA;Each survivor who writes their name in the book rolls 1d10 and adds their understanding. If no one writes, roll again on the hunt event table before moving on the hunt board.</text>
+        <rolltable person="Any sruvivor with 3+ courage">
+            <roll min="1" max="4">As you finish writing your name, you know that you did something terribly wrong. You vanish from history. Dead. Archive your gear.</roll>
+            <roll min="5" max="8">Nothing happens.</roll>
+            <roll min="9" max="10">As you write your name, you feel restored. Heall all injury levels and lost armor points. Gain +2 survival.</roll>
+            <roll min="11" max="14">You feel assured that as long as your name is in the book, nothing bad can happen to you. Gain two of the following: +2 courage, +2 understanding, or +2 survival.</roll>
+            <roll min="15" max="+">The book proves the undeniable mark you leave on the world. Gain +1 survival, +1 understanding, +1 courage, +1 permanent speed, and +1 permanent strength.</roll>
         </rolltable>
     </event>
 </huntevents>

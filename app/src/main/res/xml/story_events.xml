@@ -95,5 +95,5 @@
             <roll min="10" max="10">If the settlement has the Guidepost innovation, the Bone Witch wanders over to it. The settlement is transfixed by a sense of danger. Effortlessly, the Witch plucks the weapon from the ground. Archive the Guidepost innovation.&#xD;As a consolation, she offers to teach the settlement something in exchange for 1 bone.&#xD;If you spend 1 bone, nominate 4 survivors. They gain the Monster Claw Style fighting art.</roll>
         </rolltable>
     </event>
-    
+
 </storyevents>
