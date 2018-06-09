@@ -6,8 +6,8 @@
         android:checked="false"
         android:title="@string/hunt_events" />
     <item
-        android:id="@+id/second"
+        android:id="@+id/hunt_track"
         android:checked="false"
-        android:title="second title"/>
+        android:title="Hunt Track" />
 </group>
 </menu>

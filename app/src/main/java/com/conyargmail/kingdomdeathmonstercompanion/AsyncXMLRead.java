@@ -6,13 +6,16 @@ import android.content.res.XmlResourceParser;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.conyargmail.kingdomdeathmonstercompanion.model.Event;
+import com.conyargmail.kingdomdeathmonstercompanion.model.Roll;
+import com.conyargmail.kingdomdeathmonstercompanion.model.RollTable;
+import com.conyargmail.kingdomdeathmonstercompanion.ui.MainActivity;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.util.ArrayList;
-
-import javax.xml.transform.Result;
 
 /**
  * Created by Ryan on 1/14/2018.
@@ -33,7 +36,7 @@ public class AsyncXMLRead extends AsyncTask<Void, Void, ArrayList<Event>> {
     }
 
     @Override
-    protected ArrayList<Event> doInBackground(Void... params) {
+    public ArrayList<Event> doInBackground(Void... params) {
         String stringBuffer;
         Resources resources = MainActivity.getMainInstance().getResources();
         XmlResourceParser resourceParser = resources.getXml(R.xml.hunt_events);
@@ -94,7 +97,7 @@ public class AsyncXMLRead extends AsyncTask<Void, Void, ArrayList<Event>> {
         return events;
     }
 
-    protected void onPostExecute(String result) {
+    public void onPostExecute(String result) {
         Toast.makeText(context, result, Toast.LENGTH_LONG).show();
     }
 }
